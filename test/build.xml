@@ -1,0 +1,6 @@
+<project default="test">
+    <target name="test">
+        <taskdef name="bigtext" classname="BigText" classpath="../jar/bigtext.jar" />
+        <bigtext message="Hello" />
+    </target>
+</project>
