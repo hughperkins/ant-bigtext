@@ -6,30 +6,30 @@ write ascii art text using an ant task
 Example output
 ==============
 
-  [bigtext]                          ****  ****
-  [bigtext]    *###*   *###*          **    **
-  [bigtext]     ***     ***           **    **
-  [bigtext]     **      **            **    **
-  [bigtext]     **      **           **    **
-  [bigtext]    **      **    *****   **    **     ******
-  [bigtext]    **      **  *******   **    **   ********
-  [bigtext]    *#######**  **   **  **    **    **    **
-  [bigtext]   **      **  **   ***  **    **   **     **
-  [bigtext]   **      **  *******   **    **   **     **
-  [bigtext]   **      **  *****    ***   ***   **     **
-  [bigtext]  **      **   *     ** ****  ****  *     **
-  [bigtext] ****    ****  *** **** ****  ****  **  ****
-  [bigtext] ###*   *###*  ******   ***   ***   ******
+	[bigtext]                          ****  ****
+	[bigtext]    *###*   *###*          **    **
+	[bigtext]     ***     ***           **    **
+	[bigtext]     **      **            **    **
+	[bigtext]     **      **           **    **
+	[bigtext]    **      **    *****   **    **     ******
+	[bigtext]    **      **  *******   **    **   ********
+	[bigtext]    *#######**  **   **  **    **    **    **
+	[bigtext]   **      **  **   ***  **    **   **     **
+	[bigtext]   **      **  *******   **    **   **     **
+	[bigtext]   **      **  *****    ***   ***   **     **
+	[bigtext]  **      **   *     ** ****  ****  *     **
+	[bigtext] ****    ****  *** **** ****  ****  **  ****
+	[bigtext] ###*   *###*  ******   ***   ***   ******
 
 Example ant build file
 ======================
 
-<project default="test">
-    <target name="test">
-        <taskdef name="bigtext" classname="BigText" classpath="../jar/bigtext.jar" />
-        <bigtext message="Hello" />
-    </target>
-</project>
+	<project default="test">
+		<target name="test">
+			<taskdef name="bigtext" classname="BigText" classpath="../jar/bigtext.jar" />
+			<bigtext message="Hello" />
+		</target>
+	</project>
 
 Firstly, add the bigtext task to the build file, using 'taskdef'.
 
